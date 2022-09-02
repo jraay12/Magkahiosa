@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="./login.js"></script>
+  </head>
+  <body>
+    <div class="w-screen flex flex-row">
+      <div class="bg-primary h-screen w-[46.2%] hidden lg:flex justify-end">
+        <div
+          class="login-container ml-[78px] bg-secondary flex flex-col pt-[72px] pl-[8px] pr-[8.68px] overflow-y-auto"
+        >
+          <p class="text-white  text-[20px] tracking-wide font-[50]">
+            Welcome to <span class="font-semibold">MAGKAHI</span
+            ><span class="font-semibold text-[#FFCF2D]">OSA</span>
+          </p>
+          <hr class="text-[#BBBACC] my-2 mr-4"/>
+          <p
+            class="text-white text-[11px] tracking-wide text-thin grow"
+            id="page_1"
+          >
+            The University of Science and Technology of Southern Philippines
+            (USTP) has been handling student organization processes through the
+            Office of Student Affairs (OSA) for the past few years. Just
+            recently, in March 2020, all transactions for students have been
+            slowly converted through online means, which poses a huge gap in
+            terms of communication between the OSA and the recognized student
+            organizations.<br /><br />
+            Although emails and contact information have been opened to the
+            public for transactions, students are still facing delays and
+            backlogs in their activities which include approval of documents,
+            email responses, and the like. With these ongoing situations, the
+            lack of a centralized platform to organize the transactions and
+            create a much responsive communication are left unaddressed.
+          </p>
+          <p
+            class="text-white text-[11px] tracking-wide text-thin grow hidden"
+            id="page_2"
+          >
+            In able to address the current problems and challenges in
+            communication between the Office of Student Affairs (OSA) and the
+            recognized student organizations in the university, the Federation
+            of Accredited Extracurricular Student Organizations (FAESO) will be
+            developing MagkahiOSA: A Centralized Platform.<br /><br />
+            Together with its partner organizations, it aims to develop a
+            platform where all transactions online will be conducted for easy
+            access; in line with the paperless' advocacy of the university. This
+            project will be introduced to the students of USTP prior to the end
+            of the Academic Year 2021-2022 with high hopes in addressing the
+            problem.
+          </p>
+          <div class="flex flex-row justify-center mb-8 gap-x-2 mt-2">
+            <button
+              onclick="page_1(); return false;"
+              class="w-[16px] focus:w-[20px] h-[15px] focus:h-[20px] rounded-[50%] bg-white border-0 focus:border-2 border-white focus:border-primary"
+            ></button>
+            <button
+              onclick="page_2(); return false;"
+              class="w-[16px] focus:w-[20px] h-[15px] focus:h-[20px] rounded-[50%] bg-white border-0 focus:border-2 border-white focus:border-primary"
+            ></button>
+          </div>
+        </div>
+      </div>
+      
+        <div class="login-container md:mr-20 bg-white bg-ustp-logo bg-cover">
+          <div class="flex justify-center">
+            <img
+            src="../MagkahiOSA Logo.png"
+            alt="logo"
+            class="w-52 h-52 "
+          />
+          </div>
+          <div class="flex justify-center">
+            <div class="flex flex-col box-border w-80 h-72 bg-gray  mb-10">
+              <form action="">
+                <div class="border-2 rounded-md mx-4 w-72 mt-6">
+                  <img
+                    src="../email.png"
+                    alt="email"
+                    class="h-6 w-6 inline-block pl-1"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    id="email"
+                    class="outline-none py-1 bg-gray w-[250px]"
+                  />
+                </div>
+                <div class="border-2 rounded-md mx-4 w-72 mt-4">
+                  <img
+                    src="../password.png"
+                    alt="password"
+                    class="h-6 w-6 inline-block"
+                  />
+                  
+                  <input
+                    type="text"
+                    placeholder="Password"
+                    class="py-1 outline-none bg-gray w-[250px]"
+                  />
+                </div>
+                <input
+                  type="button"
+                  value="Log In"
+                  class="bg-secondary mt-7 rounded-md border-2 text-white mx-4 py-2 px-28 w-72 hover:bg-primary cursor-pointer"
+                />
+                <input
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                  class="w-6 h-6 ml-4 mt-8"
+                />
+                <label
+                  for="remeberme"
+                  value="IsRememberMe"
+                  class="relative inline-block font-semibold -top-1.5 text-xs"
+                  >Remember Me</label
+                >
+                <a
+                  href="#"
+                  class="text-secondary ml-16 font-extrabold relative -top-1.5 text-xs"
+                  >Forgot Password?</a
+                >
+              </form>
+              <p class="text-xs ml-6 mt-2">
+                Cookies must be enabled in your browser
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-container{
+    @apply w-full h-[80%] my-auto drop-shadow-2xl 
+}
+
+.login-bg{
+    @apply bg-ustp-blue
+}
+
+input[type="text"]:focus ~ .input-text{
+    @apply text-primary
+}
