@@ -551,20 +551,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
-}
-
-.top-\[240px\] {
-  top: 240px;
-}
-
-.left-\[325px\] {
-  left: 325px;
 }
 
 .-top-1\.5 {
